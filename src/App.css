@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.schokolade{
+  width: 200px;
+  height: 445px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: perspective(300px) rotateX(30deg);
+}
+
+.shoko {
+  width: 200px;
+  height: 300px;
+  background-color: brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.teil{
+  background-color: rgb(155, 88, 88);
+  border-radius: 0.5rem;
+  width: 95px;
+  height: 140px;
+}
+
+.box {
+  width: 200px;
+  height: 145px;
+}
+
+.biss{
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bissteil{
+  background-color: rgb(155, 88, 88);
+  border-radius: 0.5rem;
+  width: 95px;
+  height: 140px;
+}
+
+button {
+  margin-top: 10rem;
+}
+
+.play{
+  animation: start 2s linear forwards, start1 2s linear forwards;
+}
+
+@keyframes start {
+  0%{
+    height: 0.5px;
+  }
+  100%{
+    height: 145px;
+  }
+} 
+
+@keyframes start1 {
+  0%{
+    height: 0.5px;
+  }
+  100%{
+    height: 140px;
+  }
+} 
